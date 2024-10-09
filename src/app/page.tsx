@@ -17,7 +17,7 @@ function App() {
   const config = getConfig()
 
   const sign = async () => {
-    const msgString = `By connecting your wallet and using Mintify, you agree to our Terms of Service and Privacy Policy. \n\nMintify Connect: ${account.address}`;
+    const msgString = `By connecting your wallet and using Mintify, you agree to our Terms of Service and Privacy Policy. \n\nMintify Connect`;
     const sig = await signMessageAsync({message: msgString})
     console.log('sig ==>', sig)
 
